@@ -3,18 +3,9 @@
 import { ThemeProvider, useTheme } from "next-themes";
 import { Toaster } from "@/components/ui/sonner";
 import { ThemeToggle } from "@/components/DarkLightMode/theme-toggle";
-import { useState, useEffect } from "react";
 
+// ThemeProvider must SSR so next-themes injects its inline script in HTML; deferring it to post-hydration triggers React 19’s client <script> warning.
 export default function Providers({ children }: { children: React.ReactNode }) {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    return <>{children}</>;
-  }
   return (
     <ThemeProvider enableSystem attribute="class" defaultTheme="system">
       {children}
