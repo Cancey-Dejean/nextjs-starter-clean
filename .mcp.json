@@ -1,9 +1,5 @@
 {
   "mcpServers": {
-    "unicorn-horn": {
-      "command": "npx",
-      "args": ["-y", "mcp-remote", "https://unicornhorn.app/mcp"]
-    },
     "storybook-mcp": {
       "type": "http",
       "url": "http://localhost:6006/mcp"
