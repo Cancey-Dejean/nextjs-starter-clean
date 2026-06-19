@@ -10,8 +10,8 @@
     "proto:full": "tsx src/04-full-integration.ts"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.104.1",
-    "@vercel/sandbox": "^2.1.1",
+    "@anthropic-ai/sdk": "^0.105.0",
+    "@vercel/sandbox": "^2.2.1",
     "tsx": "^4.22.4",
     "typescript": "^6.0.3"
   }
