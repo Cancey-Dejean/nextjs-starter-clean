@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { inter } from "@/utils/fonts";
 import Providers from "@/components/DarkLightMode/providers";
 import "@/styles/globals.css";
+import Header from "@/components/_blocks/header/header";
+import Footer from "@/components/_blocks/footer/footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,15 +16,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <body className={inter.variable}>
-        <Providers>
-          <div className="grid min-h-[100dvh] grid-rows-[auto_1fr_auto]">
-            <header>Header</header>
-            <main>{children}</main>
-            <footer>Footer</footer>
-          </div>
-        </Providers>
+        <div className="grid min-h-dvh grid-rows-[auto_1fr_auto]">
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
