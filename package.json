@@ -36,7 +36,7 @@
     "@types/node": "^20.19.42",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
-    "@vitest/browser": "^4.1.8",
+    "@vitest/browser": "^4.1.10",
     "@vitest/browser-playwright": "^4.1.8",
     "@vitest/coverage-v8": "^4.1.8",
     "@whitespace/storybook-addon-html": "^9.0.0",
