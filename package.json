@@ -40,7 +40,7 @@
     "@vitest/browser-playwright": "^4.1.8",
     "@vitest/coverage-v8": "^4.1.8",
     "@whitespace/storybook-addon-html": "^9.0.0",
-    "baseline-browser-mapping": "^2.10.35",
+    "baseline-browser-mapping": "^2.11.0",
     "eslint": "^9.39.4",
     "eslint-config-next": "16.2.9",
     "eslint-plugin-storybook": "^10.4.6",
